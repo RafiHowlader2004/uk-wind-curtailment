@@ -40,3 +40,9 @@ def fetch_pn(unit: str, start: str, end: str) -> list[dict]:
     """Physical notifications: what one unit planned to do."""
     return _get("/balancing/physical",
                 {"bmUnit": unit, "dataset": "PN", "from": start, "to": end})
+
+
+def fetch_bod(unit: str, start: str, end: str) -> list[dict]:
+    """Bid-offer prices. pairId -1 is the first reduction band."""
+    return _get("/balancing/bid-offer",
+                {"bmUnit": unit, "from": start, "to": end})
