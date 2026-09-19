@@ -9,6 +9,10 @@ Two series matter:
 
 Curtailment is the energy in the gap between them, counted only while an
 instruction is in force, and only where the instruction sits *below* the plan.
+
+Acceptances can overlap: a unit may be re-instructed before a previous
+instruction expires. Where they overlap the later acceptance governs, so
+segments carry a `priority` (the acceptance number) and the highest wins.
 """
 
 from __future__ import annotations
@@ -25,6 +29,7 @@ class Segment:
     end: datetime
     level_from: float
     level_to: float
+    priority: int = 0
 
     def level_at(self, t: datetime) -> float | None:
         """MW at time t, or None if t falls outside this segment."""
@@ -38,22 +43,22 @@ class Segment:
 
 
 def level_at(segments: list[Segment], t: datetime) -> float | None:
-    """MW across a series of segments, or None if none covers t."""
+    """MW across a series, resolving overlaps in favour of higher priority."""
+    best_level = None
+    best_priority = None
     for s in segments:
         level = s.level_at(t)
-        if level is not None:
-            return level
-    return None
+        if level is None:
+            continue
+        if best_priority is None or s.priority > best_priority:
+            best_level, best_priority = level, s.priority
+    return best_level
 
 
 def curtailment_mwh(
     pn: list[Segment], boal: list[Segment], step_seconds: int = 60
 ) -> float:
-    """Energy lost to instructed reductions, in MWh.
-
-    Integrates max(planned - instructed, 0) over every instant an
-    instruction applies, using midpoint sampling at `step_seconds`.
-    """
+    """Energy lost to instructed reductions, in MWh."""
     if not boal:
         return 0.0
 
@@ -85,6 +90,7 @@ def parse_segments(rows: list[dict]) -> list[Segment]:
             end=_parse_time(r["timeTo"]),
             level_from=float(r["levelFrom"]),
             level_to=float(r["levelTo"]),
+            priority=int(r.get("acceptanceNumber") or 0),
         )
         for r in rows
     ]

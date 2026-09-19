@@ -44,3 +44,15 @@ def test_parse_segments_sorts_by_time():
     segments = parse_segments(rows)
     assert segments[0].level_from == 87
     assert segments[1].level_from == 80
+
+
+def test_later_acceptance_wins_where_they_overlap():
+    """Re-instructed mid-hour: the newer acceptance governs the overlap."""
+    pn = [Segment(T0, T0 + HOUR, 100, 100)]
+    boal = [
+        Segment(T0, T0 + HOUR, 60, 60, priority=1),
+        Segment(T0 + HOUR / 2, T0 + HOUR, 20, 20, priority=2),
+    ]
+    # first half: gap 40 MW for 0.5h = 20 MWh
+    # second half: gap 80 MW for 0.5h = 40 MWh
+    assert curtailment_mwh(pn, boal) == pytest.approx(60.0, abs=0.5)
