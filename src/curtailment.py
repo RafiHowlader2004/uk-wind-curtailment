@@ -56,14 +56,26 @@ def level_at(segments: list[Segment], t: datetime) -> float | None:
 
 
 def curtailment_mwh(
-    pn: list[Segment], boal: list[Segment], step_seconds: int = 60
+    pn: list[Segment],
+    boal: list[Segment],
+    step_seconds: int = 60,
+    window: tuple[datetime, datetime] | None = None,
 ) -> float:
-    """Energy lost to instructed reductions, in MWh."""
+    """Energy lost to instructed reductions, in MWh.
+
+    `window` clips the integration to a time range, so callers can ask for
+    a single settlement period rather than the whole instruction.
+    """
     if not boal:
         return 0.0
 
     start = min(s.start for s in boal)
     end = max(s.end for s in boal)
+    if window is not None:
+        start = max(start, window[0])
+        end = min(end, window[1])
+        if start >= end:
+            return 0.0
     step = timedelta(seconds=step_seconds)
     hours_per_step = step_seconds / 3600
 
