@@ -14332,3 +14332,88 @@ day,bm_unit,lead_party,mwh,cost_gbp
 2026-10-04,T_WDRGW-1,Windy Rig Wind Farm Limited,54.1,1552
 2026-10-04,T_WHILW-1,SP Renewables (UK) Limited,544.9,49219
 2026-10-04,T_WHILW-2,SP Renewables (UK) Limited,244.9,21910
+2026-10-05,2__PSTAT001,Statkraft Markets Gmbh,194.0,17599
+2026-10-05,2__PSTAT002,Statkraft Markets Gmbh,304.0,25138
+2026-10-05,C__PSTAT011,Statkraft Markets Gmbh,770.9,26982
+2026-10-05,E_BABAW-1,Statkraft Markets Gmbh,448.6,37724
+2026-10-05,E_BLARW-1,Erova Energy Limited,184.2,5108
+2026-10-05,E_BNWKW-1,Eneco Energy Trade,85.0,7563
+2026-10-05,E_BRYBW-1,Statkraft Markets Gmbh,220.9,20120
+2026-10-05,E_CLDRW-1,Vattenfall Energy Trading,105.8,9734
+2026-10-05,E_CMSTW-2,Edgware Energy Limited,511.5,9612
+2026-10-05,E_GRGRW-1,Evolve Energy Supply Limited,332.5,23278
+2026-10-05,E_MOYEW-1,Eneco Energy Trade,79.8,7338
+2026-10-05,E_TULWW-1,Eneco Energy Trade,37.2,3313
+2026-10-05,E_TULWW-2,Eneco Energy Trade,46.8,4164
+2026-10-05,T_AKGLW-2,Aikengall 2 CWCL,124.5,10835
+2026-10-05,T_AKGLW-3,AIK2A Sustainable Energy Ltd,157.3,7848
+2026-10-05,T_BDCHW-1,RWE Generation UK plc,320.6,16301
+2026-10-05,T_BEATO-1,Beatrice Offshore Windfarm Ltd,1413.0,104097
+2026-10-05,T_BEATO-2,Beatrice Offshore Windfarm Ltd,1704.2,110920
+2026-10-05,T_BEATO-3,Beatrice Offshore Windfarm Ltd,1735.9,126485
+2026-10-05,T_BEATO-4,Beatrice Offshore Windfarm Ltd,2654.5,188650
+2026-10-05,T_BENBW-1,Benbrack Wind Farm Limited,272.7,0
+2026-10-05,T_BHLAW-1,SSE Generation Ltd,1225.5,103505
+2026-10-05,T_BLLA-1,SP Renewables (UK) Limited,132.8,11841
+2026-10-05,T_BLLA-2,SP Renewables (UK) Limited,191.9,15420
+2026-10-05,T_BROCW-1,Smartestenergy Limited,199.3,7773
+2026-10-05,T_CGTHW-1,Corriegarth Wind Energy LTD,833.3,67248
+2026-10-05,T_CLDCW-1,Clyde Windfarm (Scotland) Ltd,425.0,41838
+2026-10-05,T_CLDNW-1,Clyde Windfarm (Scotland) Ltd,231.0,21194
+2026-10-05,T_CRDEW-1,EDF Energy Customers Limited,70.9,3826
+2026-10-05,T_CRDEW-2,EDF Energy Customers Limited,73.9,3992
+2026-10-05,T_CREAW-1,Creag Riabhach Wind Farm Ltd,754.9,46805
+2026-10-05,T_CRGHW-1,Statkraft Markets Gmbh,59.6,4585
+2026-10-05,T_CRMLW-1,EDF Energy Customers Limited,755.3,64200
+2026-10-05,T_DALQW-1,Statkraft Markets Gmbh,79.4,5640
+2026-10-05,T_DOREW-1,Dorenell Windfarm Limited,1891.7,19725
+2026-10-05,T_DOREW-2,Dorenell Windfarm Limited,1620.3,16614
+2026-10-05,T_DOUGW-1,Erova Energy Limited,51.6,1549
+2026-10-05,T_DUNGW-1,Dunmaglass Wind Farm Limited,888.4,80831
+2026-10-05,T_DWEXW-1,Douglas West Extension Ltd,171.0,13680
+2026-10-05,T_EDINW-1,Vattenfall Wind Power Ltd,80.9,8897
+2026-10-05,T_FALGW-1,Fallago Rig Wind Farm Limited,652.2,55171
+2026-10-05,T_GLNKW-1,EDF Energy Customers Limited,852.6,39644
+2026-10-05,T_GORDW-1,SSE Generation Ltd,958.1,78496
+2026-10-05,T_GORDW-2,SSE Generation Ltd,550.0,8618
+2026-10-05,T_GRIFW-1,Griffin Wind Farm Ltd,328.2,29074
+2026-10-05,T_GRIFW-2,Griffin Wind Farm Ltd,604.6,53565
+2026-10-05,T_HALSW-1,SP Renewables (UK) Limited,608.2,6831
+2026-10-05,T_HOWBO-1,Breesea Limited,624.4,13840
+2026-10-05,T_HOWBO-2,Sonningmay Wind Limited,552.2,13177
+2026-10-05,T_HOWBO-3,Soundmark Wind Limited,586.5,11769
+2026-10-05,T_KENNW-1,Kennoxhead Wind Farm Limited,347.8,10928
+2026-10-05,T_KILBW-1,Kilbraur Wind Energy Ltd,125.0,11877
+2026-10-05,T_KLGLW-1,SP Renewables (UK) Limited,1053.4,84196
+2026-10-05,T_KPMRW-1,KYPE MUIR WIND FARM LIMITED,711.8,8689
+2026-10-05,T_LCLTW-1,Eneco Energy Trade,706.3,62865
+2026-10-05,T_LIMKW-1,Limekiln Extension Ltd,2286.3,68589
+2026-10-05,T_MIDMW-1,MIDDLE MUIR WIND FARM LIMITED,301.6,3779
+2026-10-05,T_MOWEO-1,Moray Offshore Wind East Ltd,6533.0,30277
+2026-10-05,T_MOWEO-3,Moray Offshore Wind East Ltd,6016.4,28143
+2026-10-05,T_MOWWO-1,Moray Offshore Wind West Ltd,2903.2,47339
+2026-10-05,T_MOWWO-2,Moray Offshore Wind West Ltd,3226.8,52805
+2026-10-05,T_MOWWO-3,Moray Offshore Wind West Ltd,3133.8,42478
+2026-10-05,T_MOWWO-4,Moray Offshore Wind West Ltd,6450.3,213052
+2026-10-05,T_NNGAO-1,Neart Na Gaoithe Offshore Wind,4487.1,200021
+2026-10-05,T_NNGAO-2,Neart Na Gaoithe Offshore Wind,3963.3,197504
+2026-10-05,T_SAKNW-1,Sandy Knowe Wind Farm Ltd,510.2,20410
+2026-10-05,T_SGRWO-1,Seagreen Wind Energy Limited,4644.7,63074
+2026-10-05,T_SGRWO-2,Seagreen Wind Energy Limited,1373.1,18646
+2026-10-05,T_SGRWO-3,Seagreen Wind Energy Limited,2301.5,31255
+2026-10-05,T_SGRWO-4,Seagreen Wind Energy Limited,1998.0,27133
+2026-10-05,T_SGRWO-5,Seagreen Wind Energy Limited,1256.0,17056
+2026-10-05,T_SGRWO-6,Seagreen Wind Energy Limited,6408.3,87025
+2026-10-05,T_SOKYW-1,South Kyle Wind Farm Limited,861.0,41328
+2026-10-05,T_STLGW-1,Stronelairg Windfarm Limited,1063.1,89797
+2026-10-05,T_STLGW-2,Stronelairg Windfarm Limited,1168.9,98733
+2026-10-05,T_STLGW-3,Stronelairg Windfarm Limited,876.7,74053
+2026-10-05,T_STRNW-1,Strathy Wind Farm Limited,919.1,75457
+2026-10-05,T_TWSHW-1,Twentyshilling Limited,71.1,2001
+2026-10-05,T_VKNGW-1,Viking Energy Wind Farm LLP,2536.4,43321
+2026-10-05,T_VKNGW-2,Viking Energy Wind Farm LLP,2460.8,42030
+2026-10-05,T_VKNGW-3,Viking Energy Wind Farm LLP,2462.5,42060
+2026-10-05,T_VKNGW-4,Viking Energy Wind Farm LLP,2538.2,43352
+2026-10-05,T_WDRGW-1,Windy Rig Wind Farm Limited,292.4,8391
+2026-10-05,T_WHILW-1,SP Renewables (UK) Limited,234.1,21143
+2026-10-05,T_WHILW-2,SP Renewables (UK) Limited,67.1,6001
